@@ -26,4 +26,9 @@ public class OrderControllerImpl implements IOrderController {
     public ResponseEntity<Order> get(Long order_id) {
         return orderService.get(order_id);
     }
+
+    @Override
+    public ResponseEntity<Order> create(Order order) {
+        return orderService.create(order);
+    }
 }

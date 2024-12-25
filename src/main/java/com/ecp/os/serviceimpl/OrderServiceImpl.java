@@ -36,4 +36,10 @@ public class OrderServiceImpl implements IOrderService {
             throw new RuntimeException(e);
         }
     }
+
+    @Override
+    public ResponseEntity<Order> create(Order order) {
+        logger.info("Order Service class create method order: {}",order);
+        return null;
+    }
 }

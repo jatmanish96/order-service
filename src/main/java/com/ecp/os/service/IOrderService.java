@@ -7,5 +7,7 @@ public interface IOrderService {
 
     ResponseEntity<Order>get(Long order_id);
 
+    ResponseEntity<Order>create(Order order);
+
 
 }
